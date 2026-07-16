@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "TildaSans";
+    src: url('../../src/fonts/TildaSans-Black.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "TildaSans";
+    src: url('../../src/fonts/TildaSans-ExtraBold.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "TildaSans";
+    src: url('../../src/fonts/TildaSans-Bold.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "TildaSans";
+    src: url('../../src/fonts/TildaSans-Semibold.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "TildaSans";
+    src: url('../../src/fonts/TildaSans-Medium.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "TildaSans";
+    src: url('../../src/fonts/TildaSans-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TildaSans";
+    src: url('../../src/fonts/TildaSans-Light.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+}

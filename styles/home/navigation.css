@@ -1,0 +1,45 @@
+.navigation {
+    font-weight: 600;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.navigation__list {
+    margin: 45px 0 45px 25%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.navigation__item {
+    list-style: none;
+}
+
+.navigation__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.navigation__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #141C3A;
+}
+
+.navigation__button {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.navigation__connection {
+    text-decoration: none;
+    padding: 9px 22px;
+    max-height: 50px;
+    white-space: nowrap;
+    line-height: initial;
+}

@@ -1,0 +1,32 @@
+body {
+    font-family: "TildaSans";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    color: #141C3A;
+    margin: 0;
+    --green: #5DD9C8;
+    --violet: #8063A6;
+    --orange: #FF9235;
+}
+
+h1, h2 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 81px;
+}
+
+.btn {
+    color: var(--orange) !important;
+    border: 2px solid var(--orange);
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    color: white !important;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
