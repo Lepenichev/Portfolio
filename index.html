@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles/base/fonts.css">
     <link rel="stylesheet" href="./styles/home/navigation.css">
     <link rel="stylesheet" href="./styles/home/information.css">
+    <link rel="stylesheet" href="./styles/home/author.css">
+    <link rel="stylesheet" href="./styles/home/skills.css">
     <title>Сайт портфолио</title>
 </head>
 <body>
@@ -38,6 +40,79 @@
             <img class="information__image" 
                 src="./src/image/Главный экран.png" 
                 alt="Монитор компьютера">
+        </section>
+
+        <article class="author">
+            <div class="author__background">
+                <h2 class="author__header">Привет, я веб-разработчик</h2>
+                <p class="author__text">
+                    Как я и сказал, я начинающий разработчик. 
+                    Около года самостоятельно изучал frontend часть этой профессии. 
+                    Успел поработать на фрилансе, сверстать пару сайтов, 
+                    на данный момент продолжаю углублять свои знания в этой сфере.
+                </p>
+            </div>
+            <figure class="author__image-wrapper">
+                <img class="author__image" src="./src/image/Мое фото.jpg" alt="Фото автора сайта">
+            </figure>
+        </article>
+
+        <section class="skills">
+            <h2 class="skills__header">Навыки и стек технологий</h2>
+            <div class="skills__table">
+                <div class="skills__card">
+                    <div class="skills__card-section">
+                        <img class="skills__icon" src="./src/icon/Development.svg" alt="Знак больше меньше и косая черта">
+                        <h3 class="skills__card-header">Разработка сайтов</h3>
+                    </div>
+                    <div class="skills__card-section">
+                        <span class="skills__text-orange">Языки</span>
+                        <ul class="skills-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                        </ul>
+                        <span class="skills__text-orange">Инструменты</span>
+                        <ul class="skills-list">
+                            <li>VS Code</li>
+                            <li>Github</li>
+                            <li>Git</li>
+                            <li>Vite</li>
+                            <li>React</li>
+                            <li>Node.JS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills__card">
+                    <div class="skills__card-section">
+                        <img class="skills__icon" src="./src/icon/Design.svg" alt="Монитор с кисточкой">
+                        <h3 class="skills__card-header">Дизайн</h3>
+                    </div>
+                    <div class="skills__card-section">
+                        <span class="skills__text-orange">Инструменты</span>
+                        <ul class="skills-list">
+                            <li>Figma</li>
+                            <li>PerfectPixel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills__card">
+                    <div class="skills__card-section">
+                        <img class="skills__icon" src="./src/icon/SoftSkills.svg" alt="Сообщения">
+                        <h3 class="skills__card-header">Soft skills</h3>
+                    </div>
+                    <div class="skills__card-section">
+                        <span class="skills__text-orange">Навыки</span>
+                        <ul class="skills-list">
+                            <li>Комуникабельность</li>
+                            <li>Целеустремленность</li>
+                            <li>Эмпатия</li>
+                            <li>Гибкость</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
