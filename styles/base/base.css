@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "TildaSans", sans-serif;
     font-size: 36px;
@@ -17,6 +21,10 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+a, button {
+    cursor: pointer;
+}
+
 .btn {
     color: var(--orange) !important;
     border: 2px solid var(--orange);
@@ -26,6 +34,10 @@ h1, h2 {
 .btn:hover {
     background-color: var(--orange);
     color: white !important;
+}
+
+.icon-hover {
+    display: none;
 }
 
 *, *::before, *::after {

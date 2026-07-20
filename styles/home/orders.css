@@ -1,0 +1,122 @@
+.orders {
+    margin-bottom: 64px;
+}
+
+.orders__top {
+    text-align: center;
+    padding: 64px 0;
+    background-color: var(--green);
+}
+
+.orders__header {
+    text-transform: none;
+    margin: 0 0 45px 0;
+}
+
+.orders__text {
+    margin: 0;
+}
+
+.orders__bottom {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orders__image {
+    width: 35vw;
+    height: 35vw;
+    margin-left: 5vw;
+}
+
+.orders__form {
+    margin: 0 5vw;
+    padding: 0;
+    width: 100%;
+}
+
+.orders__form fieldset {
+    border: none;
+}
+
+.orders__sender-data {
+    margin: 0;
+    margin-bottom: 48px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.orders__sender-data .orders__field:first-child {
+    padding-right: 10px;
+}
+
+.orders__sender-data .orders__input {
+    min-width: 150px;
+    max-width: 20vw;
+    padding: 0 6px;
+}
+
+.orders__field {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.orders__label {
+    margin: 0 0 10px 4px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.orders__input {
+    margin: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    border: 1px solid var(--orange);
+    border-radius: 12px;
+}
+
+.orders__input:focus {
+    outline: none;
+}
+
+.orders__text-body {
+    margin: 0;
+    padding: 0;
+}
+
+.orders__text-body .orders__input {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+}
+
+.orders__submit {
+    margin: 48px 0 0 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.orders__button {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    font-family: "TildaSans", sans-serif;
+    padding: 15px 40px;
+}

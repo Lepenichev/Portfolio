@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./styles/home/information.css">
     <link rel="stylesheet" href="./styles/home/author.css">
     <link rel="stylesheet" href="./styles/home/skills.css">
+    <link rel="stylesheet" href="./styles/home/projects.css">
+    <link rel="stylesheet" href="./styles/home/orders.css">
+    <link rel="stylesheet" href="./styles/home/reviews.css">
+    <link rel="stylesheet" href="./styles/home/connection.css">
+    <link rel="stylesheet" href="./styles/home/footer.css">
     <title>Сайт портфолио</title>
 </head>
 <body>
@@ -16,25 +21,25 @@
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a class="navigation__link" href="">Главная</a>
+                    <a class="navigation__link" href="#main">Главная</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="">Обо мне</a>
+                    <a class="navigation__link" href="#about">Обо мне</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="">Навыки и стэк</a>
+                    <a class="navigation__link" href="#skills">Навыки и стэк</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="">Проекты</a>
+                    <a class="navigation__link" href="#projects">Проекты</a>
                 </li>
             </ul>
             <div class="navigation__button">
-                <a class="navigation__connection btn" href="">Связаться со мной</a>
+                <a class="navigation__connection btn" href="#contact">Связаться со мной</a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="information">
+        <section id="main" class="information">
             <h1 class="information__header">Алексей Лепеничев</h1>
             <p class="information__text">Начинающий fullstack разработчик</p>
             <img class="information__image" 
@@ -42,7 +47,7 @@
                 alt="Монитор компьютера">
         </section>
 
-        <article class="author">
+        <article class="author" id="about">
             <div class="author__background">
                 <h2 class="author__header">Привет, я веб-разработчик</h2>
                 <p class="author__text">
@@ -57,7 +62,7 @@
             </figure>
         </article>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="skills__header">Навыки и стек технологий</h2>
             <div class="skills__table">
                 <div class="skills__card">
@@ -114,6 +119,162 @@
                 </div>
             </div>
         </section>
+
+        <section class="projects" id="projects">
+            <h2 class="projects__header">Проекты</h2>
+            <div class="projects__items">
+                <figure class="projects__item">
+                    <a href="https://lepenichev.github.io/St.-Petersburg-City-Tour/">
+                        <img src="./src/image/Проект-1.jpg" alt="Скриншот проекта">
+                    </a>
+                </figure>
+                <figure class="projects__item">
+                    <a href="">
+                        <img src="" alt="Скриншот проекта">
+                    </a>
+                </figure>
+                <figure class="projects__item">
+                    <a href="">
+                        <img src="" alt="Скриншот проекта">
+                    </a>
+                </figure>
+                <figure class="projects__item">
+                    <a href="">
+                        <img src="" alt="Скриншот проекта">
+                    </a>
+                </figure>
+                <figure class="projects__item">
+                    <a href="">
+                        <img src="" alt="Скриншот проекта">
+                    </a>
+                </figure>
+                <figure class="projects__item">
+                    <a href="">
+                        <img src="" alt="Скриншот проекта">
+                    </a>
+                </figure>
+            </div>
+            <a class="projects__button btn" href="https://github.com/Lepenichev">Посмотреть на Github</a>
+        </section>
+
+        <section class="orders" id="contact">
+            <div class="orders__top">
+                <h2 class="orders__header">Хотите заказать сайт?</h2>
+                <p class="orders__text">Напишите мне, чтобы обсудить детали.</p>
+            </div>
+            <div class="orders__bottom">
+                <img class="orders__image" 
+                    src="./src/image/Форма.png" 
+                    alt="Изображение компьютера и рук печатающих на нем">
+                <form class="orders__form">
+                    <fieldset class="orders__sender-data">
+                        <label class="orders__field" for="name">
+                            <span class="orders__label">Имя</span>
+                            <input class="orders__input" type="text" name="name">
+                        </label>
+                        <label class="orders__field" for="email">
+                            <span class="orders__label">E-mail</span>
+                            <input class="orders__input" type="email" name="email">
+                        </label>
+                    </fieldset>
+                    <fieldset class="orders__text-body">
+                        <label class="orders__field" for="body">
+                            <span class="orders__label">Расскажите про свою задачу</span>
+                            <textarea class="orders__input" name="body"></textarea>
+                        </label>
+                    </fieldset>
+                    <fieldset class="orders__submit">
+                        <button class="orders__button btn" type="submit">Отправить</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2 class="reviews__header">Отзывы</h2>
+            <p class="reviews__desc">
+                Люди, с которыми я работал, остаются довольны результатом.
+            </p>
+            <figure class="reviews__card">
+                <div class="reviews__image">
+                    <img src="" alt="Фото автора отзыва">
+                </div>
+                <figcaption class="reviews__caption">
+                    <p class="reviews__text">
+                        «Текст отзыва»
+                    </p>
+                    <p class="reviews__info">
+                        Имя Фамилия
+                    </p>
+                    <p class="reviews__info">
+                        Компания, Город
+                    </p>
+                </figcaption>
+            </figure>
+            <div class="reviews__toggle">
+                <button class="reviews__toggle-button btn" type="button">
+                    <img class="reviews__toggle-arrow" src="./src/icon/Arrow-L.svg" alt="Стрелка влево">
+                    <img class="reviews__toggle-arrow icon-hover" src="./src/icon/Arrow-L-white.svg" alt="Стрелка влево">
+                </button>
+                <button class="reviews__toggle-button btn" type="button">
+                    <img class="reviews__toggle-arrow" src="./src/icon/Arrow-R.svg" alt="Стрелка вправо">
+                    <img class="reviews__toggle-arrow icon-hover" src="./src/icon/Arrow-R-white.svg" alt="Стрелка вправо">
+                </button>
+            </div>
+        </section>
     </main>
+
+    <aside class="connection">
+        <div class="connection__container">
+            <h2 class="connection__header">Договоримся о сотрудничестве</h2>
+            <p class="connection__text">
+                У вас есть идея проекта или предложение о работе? 
+                Напишите мне. Я открыт(а) к разным вариантам 
+                сотрудничества.
+            </p>
+            <a class="connection__button" href="#contact">Связаться с разработчиком</a>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <a class="footer__social" href="https://t.me/kavabanga6666">
+                <img class="footer__social-icon" src="./src/icon/TG.svg">
+                <img class="footer__social-icon icon-hover" src="./src/icon/TG-white.svg">
+            </a>
+            <a class="footer__social" href="">
+                <img class="footer__social-icon" src="./src/icon/Habr.svg">
+                <img class="footer__social-icon icon-hover" src="./src/icon/Habr-white.svg">
+            </a>
+            <a class="footer__social" href="mailto:mr.lepenichev@mail.ru">
+                <img class="footer__social-icon" src="./src/icon/Email.svg">
+                <img class="footer__social-icon icon-hover" src="./src/icon/Email-white.svg">
+            </a>
+        </div>
+        <p class="footer__links">
+            Изображения и иконки:
+            <a href="https://ru.freepik.com/free-vector/software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">
+                Изображение-1 от Storyset на Freepik.
+            </a>
+            <a href="https://ru.freepik.com/free-vector/code-typing-conceptillustration_10259340.htm#&position=12&from_vie w=author">
+                Изображение-2 от Storyset на Freepik.
+            </a>
+            <a href="https://www.flaticon.com/ru/free- icons/html" title="html иконки">
+                Иконка "Html" oT Frey Wazza a Flaticon.
+            </a>
+            <a href="https://www.flaticon.com/ru/free- icons/" title="телеграмма иконки">
+                Иконка «Телеграм» от Freepik на Flaticon.
+            </a>
+            <a href="https://www.flaticon.com/ru/free- icons/" title="общение иконки">
+                Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon.
+            </a>
+            <a href="https://www.flaticon.com/ru/free- icons/-" title="Дизайн сайта иконки">
+                Иконка «Дизайн сайта» от Freepik на Flaticon.
+            </a>
+            <a href="https://www.flaticon.com/ru/free- icons/-" title="Эл. адрес иконки">
+                Иконка «Эл. адрес» от Those Icons a Flaticon.
+            </a>
+        </p>
+    </footer>
 </body>
 </html>

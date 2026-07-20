@@ -30,6 +30,10 @@
     color: #141C3A;
 }
 
+.navigation__link:hover {
+    opacity: 0.5;
+}
+
 .navigation__button {
     display: flex;
     width: 25%;
