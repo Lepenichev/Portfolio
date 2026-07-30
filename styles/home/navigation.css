@@ -1,14 +1,18 @@
 .navigation {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #ffff;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 0.82em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 65px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navigation__list {
-    margin: 45px 0 45px 25%;
+    margin: 1.25em 0 1.25em 25%;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -27,7 +31,7 @@
 .navigation__link {
     text-decoration: none;
     font-weight: 700;
-    color: #141C3A;
+    color: var(--darck);
 }
 
 .navigation__link:hover {
@@ -45,5 +49,5 @@
     padding: 9px 22px;
     max-height: 50px;
     white-space: nowrap;
-    line-height: initial;
+    line-height: 0.92em;
 }

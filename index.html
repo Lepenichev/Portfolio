@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Портфолио Лепеничева Алексея" />
+    <meta name="description" content="Сайт портфолио, full-stack разработчика" />
+    <meta property="og:description" content="Лепеничев Алексей, 
+                                            full-stack разработчик. 
+                                            Довожу пдело до конца, 
+                                            буду рад работать с вашим проектом" 
+    />
+    <meta name="keywords" content="портфолио, веб-разработчик, фронтенд-разработчик," />
     <link rel="stylesheet" href="./styles/base/base.css">
     <link rel="stylesheet" href="./styles/base/fonts.css">
     <link rel="stylesheet" href="./styles/home/navigation.css">
@@ -39,7 +49,7 @@
         </nav>
     </header>
     <main>
-        <section id="main" class="information">
+        <section id="main" class="information fade-in-left ">
             <h1 class="information__header">Алексей Лепеничев</h1>
             <p class="information__text">Начинающий fullstack разработчик</p>
             <img class="information__image" 
@@ -47,7 +57,7 @@
                 alt="Монитор компьютера">
         </section>
 
-        <article class="author" id="about">
+        <article class="author fade-in-right" id="about">
             <div class="author__background">
                 <h2 class="author__header">Привет, я веб-разработчик</h2>
                 <p class="author__text">
@@ -62,7 +72,7 @@
             </figure>
         </article>
 
-        <section class="skills" id="skills">
+        <section class="skills fade-in-left" id="skills">
             <h2 class="skills__header">Навыки и стек технологий</h2>
             <div class="skills__table">
                 <div class="skills__card">
@@ -120,44 +130,56 @@
             </div>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="projects fade-in-right" id="projects">
             <h2 class="projects__header">Проекты</h2>
             <div class="projects__items">
                 <figure class="projects__item">
-                    <a href="https://lepenichev.github.io/St.-Petersburg-City-Tour/">
-                        <img src="./src/image/Проект-1.jpg" alt="Скриншот проекта">
-                    </a>
+                    <img src="./src/image/Проект-1.jpg" alt="Скриншот проекта">
+                    <figcaption class="projects__info">
+                        <p class="projects__info-text">Сайт для рекламы эксрурсии по Санкт петербургу</p>
+                        <a href="https://lepenichev.github.io/St.-Petersburg-City-Tour/" class="projects__info-btn">Посмотреть сайт</a>
+                    </figcaption>
                 </figure>
                 <figure class="projects__item">
-                    <a href="https://lepenichev.github.io/Plumbing-and-bathroom-furniture/#top">
-                        <img src="./src/image/Проект-2.jpg" alt="Скриншот проекта">
-                    </a>
+                    <img src="./src/image/Проект-2.jpg" alt="Скриншот проекта">
+                    <figcaption class="projects__info">
+                        <p class="projects__info-text">Сайт про сантехнику и мебель для ванной</p>
+                        <a href="https://lepenichev.github.io/Plumbing-and-bathroom-furniture/#top" class="projects__info-btn">Посмотреть сайт</a>
+                    </figcaption>
                 </figure>
                 <figure class="projects__item">
-                    <a href="">
-                        <img src="" alt="Скриншот проекта">
-                    </a>
+                    <img src="" alt="Скриншот проекта">
+                    <figcaption class="projects__info">
+                        <p class="projects__info-text">Пока нечего нет:(</p>
+                        <a href="" class="projects__info-btn">Посмотреть сайт</a>
+                    </figcaption>
                 </figure>
                 <figure class="projects__item">
-                    <a href="">
-                        <img src="" alt="Скриншот проекта">
-                    </a>
+                    <img src="" alt="Скриншот проекта">
+                    <figcaption class="projects__info">
+                        <p class="projects__info-text">Пока нечего нет:(</p>
+                        <a href="" class="projects__info-btn">Посмотреть сайт</a>
+                    </figcaption>
                 </figure>
                 <figure class="projects__item">
-                    <a href="">
-                        <img src="" alt="Скриншот проекта">
-                    </a>
+                    <img src="" alt="Скриншот проекта">
+                    <figcaption class="projects__info">
+                        <p class="projects__info-text">Пока нечего нет:(</p>
+                        <a href="" class="projects__info-btn">Посмотреть сайт</a>
+                    </figcaption>
                 </figure>
                 <figure class="projects__item">
-                    <a href="">
-                        <img src="" alt="Скриншот проекта">
-                    </a>
+                    <img src="" alt="Скриншот проекта">
+                    <figcaption class="projects__info">
+                        <p class="projects__info-text">Пока нечего нет:(</p>
+                        <a href="" class="projects__info-btn">Посмотреть сайт</a>
+                    </figcaption>
                 </figure>
             </div>
             <a class="projects__button btn" href="https://github.com/Lepenichev">Посмотреть на Github</a>
         </section>
 
-        <section class="orders" id="contact">
+        <section class="orders fade-in-left" id="contact">
             <div class="orders__top">
                 <h2 class="orders__header">Хотите заказать сайт?</h2>
                 <p class="orders__text">Напишите мне, чтобы обсудить детали.</p>
@@ -190,7 +212,7 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews fade-in-right">
             <h2 class="reviews__header">Отзывы</h2>
             <p class="reviews__desc">
                 Люди, с которыми я работал, остаются довольны результатом.
@@ -224,7 +246,7 @@
         </section>
     </main>
 
-    <aside class="connection">
+    <aside class="connection fade-in-left">
         <div class="connection__container">
             <h2 class="connection__header">Договоримся о сотрудничестве</h2>
             <p class="connection__text">

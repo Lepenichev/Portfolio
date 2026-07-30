@@ -1,23 +1,27 @@
+:root {
+    --green: #5DD9C8;
+    --violet: #8063A6;
+    --orange: #FF9235;
+    --darck: #141C3A;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: "TildaSans", sans-serif;
-    font-size: 36px;
+    font-size: clamp(24px, 2.5vw, 36px);
     font-weight: 400;
     line-height: 54px;
-    color: #141C3A;
+    color: var(--darck);
     margin: 0;
-    --green: #5DD9C8;
-    --violet: #8063A6;
-    --orange: #FF9235;
 }
 
 h1, h2 {
-    font-size: 54px;
+    font-size: 1.5em;
     font-weight: 700;
-    line-height: 81px;
+    line-height: 1.5em;
     text-transform: uppercase;
 }
 
@@ -42,4 +46,30 @@ a, button {
 
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+.fade-in-left {
+    animation: fade-in-left 5s ease 0s 1 normal;
+}
+
+@keyframes fade-in-left {
+    to {
+        transform: translateX(0vh);
+    }
+    from {
+        transform: translateX(-100vh);
+    }
+}
+
+.fade-in-right {
+    animation: fade-in-right 5s ease 0s 1 normal;
+}
+
+@keyframes fade-in-right {
+    to {
+        transform: translateX(0vh);
+    }
+    from {
+        transform: translateX(100vh);
+    }
 }

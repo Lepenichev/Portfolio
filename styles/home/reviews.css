@@ -19,6 +19,8 @@
 .reviews__image {
     width: 20vw;
     height: 15vw;
+    min-width: 220px;
+    min-height: 165px;
     margin: 0 auto 78px;
     padding: 0;
     border: 3px solid var(--green);
@@ -41,8 +43,8 @@
 }
 
 .reviews__info {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 0.55em;
+    line-height: 1.5em;
     margin: 0;
 }
 
