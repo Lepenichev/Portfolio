@@ -4,7 +4,8 @@
 
 .orders__top {
     text-align: center;
-    padding: 64px 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
     background-color: var(--green);
 }
 
@@ -19,7 +20,8 @@
 
 .orders__bottom {
     width: 100%;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,4 +124,46 @@
     background-color: white;
     font-family: "TildaSans", sans-serif;
     padding: 15px 40px;
+}
+
+@media(max-width: 1100px) {
+    .orders__bottom {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .orders__image {
+        margin: 0;
+        width: 65vw;
+        height: 65vw;
+    }
+
+    .orders__sender-data {
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: 550px) {
+    .orders__image {
+        min-width: 380px;
+        min-height: 380px;
+    }
+
+    .orders__sender-data{
+        flex-direction: column;
+    }
+
+    .orders__sender-data 
+    .orders__input  {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+@media(max-width: 395px) {
+    .orders__image {
+        min-width: 300px;
+        min-height: 300px;
+    }
 }

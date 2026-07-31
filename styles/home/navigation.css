@@ -39,9 +39,8 @@
 }
 
 .navigation__button {
-    display: flex;
+    margin: 0 auto;
     width: 25%;
-    justify-content: center;
 }
 
 .navigation__connection {
@@ -50,4 +49,23 @@
     max-height: 50px;
     white-space: nowrap;
     line-height: 0.92em;
+}
+
+@media(max-width: 900px) {
+    .navigation {
+        display: none;
+    }
+
+    .navigation__button {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 400px) {
+    .navigation__connection {
+        font-size: 14px;
+    }
 }

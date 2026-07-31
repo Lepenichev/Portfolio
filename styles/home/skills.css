@@ -54,3 +54,21 @@
     margin: 0;
     list-style-type: none;
 }
+
+@media(max-width: 900px) {
+    .skills__table {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .skills__card:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--green);
+    }
+}
+
+@media(max-width: 500px) {
+    .skills__table {
+        width: 100%;
+    }
+}

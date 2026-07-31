@@ -9,13 +9,14 @@
     <meta name="description" content="Сайт портфолио, full-stack разработчика" />
     <meta property="og:description" content="Лепеничев Алексей, 
                                             full-stack разработчик. 
-                                            Довожу пдело до конца, 
-                                            буду рад работать с вашим проектом" 
-    />
-    <meta name="keywords" content="портфолио, веб-разработчик, фронтенд-разработчик," />
+                                            Довожу дело до конца, 
+                                            буду рад работать с вашим проектом" />
+    <meta name="keywords" content="портфолио, веб-разработчик, фронтенд-разработчик, создание сайтов, создание веб сайта" />
     <link rel="stylesheet" href="./styles/base/base.css">
     <link rel="stylesheet" href="./styles/base/fonts.css">
+    <link rel="stylesheet" href="./styles/base/fade-in.css">
     <link rel="stylesheet" href="./styles/home/navigation.css">
+    <link rel="stylesheet" href="./styles/home/mobile-nav.css">
     <link rel="stylesheet" href="./styles/home/information.css">
     <link rel="stylesheet" href="./styles/home/author.css">
     <link rel="stylesheet" href="./styles/home/skills.css">
@@ -26,9 +27,9 @@
     <link rel="stylesheet" href="./styles/home/footer.css">
     <title>Сайт портфолио</title>
 </head>
-<body>
+<body tabindex="0">
     <header>
-        <nav class="navigation">
+        <nav class="navigation enter-from-top">
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a class="navigation__link" href="#main">Главная</a>
@@ -47,40 +48,65 @@
                 <a class="navigation__connection btn" href="#contact">Связаться со мной</a>
             </div>
         </nav>
+
+        <nav class="mobile-nav enter-from-top">
+            <details>
+                <summary class="mobile-nav__btn">
+                    <img src="./src/icon/Burger-menu.svg" alt="">
+                </summary>
+                <ul class="navigation__list mobile-nav__list">
+                    <li class="navigation__item mobile-nav__item">
+                        <a class="navigation__link" href="#main">Главная</a>
+                    </li>
+                    <li class="navigation__item mobile-nav__item">
+                        <a class="navigation__link" href="#about">Обо мне</a>
+                    </li>
+                    <li class="navigation__item mobile-nav__item">
+                        <a class="navigation__link" href="#skills">Навыки и стэк</a>
+                    </li>
+                    <li class="navigation__item mobile-nav__item">
+                        <a class="navigation__link" href="#projects">Проекты</a>
+                    </li>
+                </ul>
+            </details>
+            <div class="navigation__button">
+                <a class="navigation__connection btn" href="#contact">Связаться со мной</a>
+            </div>
+        </nav>
     </header>
     <main>
-        <section id="main" class="information fade-in-left ">
-            <h1 class="information__header">Алексей Лепеничев</h1>
-            <p class="information__text">Начинающий fullstack разработчик</p>
-            <img class="information__image" 
+        <section id="main" class="information container">
+            <h1 class="information__header fade-in-1">Алексей Лепеничев</h1>
+            <p class="information__text" fade-in-2>Начинающий fullstack разработчик</p>
+            <img class="information__image fade-in-3" 
                 src="./src/image/Главный экран.png" 
                 alt="Монитор компьютера">
         </section>
 
-        <article class="author fade-in-right" id="about">
-            <div class="author__background">
-                <h2 class="author__header">Привет, я веб-разработчик</h2>
-                <p class="author__text">
+        <article class="author" id="about">
+            <div class="author__background container">
+                <h2 class="author__header fade-in-1">Привет, я веб-разработчик</h2>
+                <p class="author__text fade-in-2">
                     Как я и сказал, я начинающий разработчик. 
                     Около года самостоятельно изучал frontend часть этой профессии. 
                     Успел поработать на фрилансе, сверстать пару сайтов, 
                     на данный момент продолжаю углублять свои знания в этой сфере.
                 </p>
             </div>
-            <figure class="author__image-wrapper">
+            <figure class="author__image-wrapper fade-in-3">
                 <img class="author__image" src="./src/image/Мое фото.jpg" alt="Фото автора сайта">
             </figure>
         </article>
 
-        <section class="skills fade-in-left" id="skills">
-            <h2 class="skills__header">Навыки и стек технологий</h2>
+        <section class="skills container" id="skills">
+            <h2 class="skills__header fade-in-1">Навыки и стек технологий</h2>
             <div class="skills__table">
-                <div class="skills__card">
+                <div class="skills__card fade-in-1">
                     <div class="skills__card-section">
                         <img class="skills__icon" src="./src/icon/Development.svg" alt="Знак больше меньше и косая черта">
                         <h3 class="skills__card-header">Разработка сайтов</h3>
                     </div>
-                    <div class="skills__card-section">
+                    <div class="skills__card-section fade-in-2">
                         <span class="skills__text-orange">Языки</span>
                         <ul class="skills-list">
                             <li>HTML</li>
@@ -99,7 +125,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="skills__card">
+                <div class="skills__card fade-in-3">
                     <div class="skills__card-section">
                         <img class="skills__icon" src="./src/icon/Design.svg" alt="Монитор с кисточкой">
                         <h3 class="skills__card-header">Дизайн</h3>
@@ -112,7 +138,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="skills__card">
+                <div class="skills__card fade-in-4">
                     <div class="skills__card-section">
                         <img class="skills__icon" src="./src/icon/SoftSkills.svg" alt="Сообщения">
                         <h3 class="skills__card-header">Soft skills</h3>
@@ -130,9 +156,9 @@
             </div>
         </section>
 
-        <section class="projects fade-in-right" id="projects">
-            <h2 class="projects__header">Проекты</h2>
-            <div class="projects__items">
+        <section class="projects container" id="projects">
+            <h2 class="projects__header fade-in-1">Проекты</h2>
+            <div class="projects__items fade-in-2">
                 <figure class="projects__item">
                     <img src="./src/image/Проект-1.jpg" alt="Скриншот проекта">
                     <figcaption class="projects__info">
@@ -176,20 +202,20 @@
                     </figcaption>
                 </figure>
             </div>
-            <a class="projects__button btn" href="https://github.com/Lepenichev">Посмотреть на Github</a>
+            <a class="projects__button btn fade-in-3" href="https://github.com/Lepenichev">Посмотреть на Github</a>
         </section>
 
-        <section class="orders fade-in-left" id="contact">
-            <div class="orders__top">
-                <h2 class="orders__header">Хотите заказать сайт?</h2>
-                <p class="orders__text">Напишите мне, чтобы обсудить детали.</p>
+        <section class="orders" id="contact">
+            <div class="orders__top container">
+                <h2 class="orders__header fade-in-1">Хотите заказать сайт?</h2>
+                <p class="orders__text fade-in-2">Напишите мне, чтобы обсудить детали.</p>
             </div>
-            <div class="orders__bottom">
-                <img class="orders__image" 
+            <div class="orders__bottom container">
+                <img class="orders__image fade-in-1" 
                     src="./src/image/Форма.png" 
                     alt="Изображение компьютера и рук печатающих на нем">
                 <form class="orders__form">
-                    <fieldset class="orders__sender-data">
+                    <fieldset class="orders__sender-data fade-in-1">
                         <label class="orders__field" for="name">
                             <span class="orders__label">Имя</span>
                             <input class="orders__input" type="text" name="name">
@@ -199,25 +225,25 @@
                             <input class="orders__input" type="email" name="email">
                         </label>
                     </fieldset>
-                    <fieldset class="orders__text-body">
+                    <fieldset class="orders__text-body fade-in-2">
                         <label class="orders__field" for="body">
                             <span class="orders__label">Расскажите про свою задачу</span>
                             <textarea class="orders__input" name="body"></textarea>
                         </label>
                     </fieldset>
-                    <fieldset class="orders__submit">
+                    <fieldset class="orders__submit fade-in-3">
                         <button class="orders__button btn" type="submit">Отправить</button>
                     </fieldset>
                 </form>
             </div>
         </section>
 
-        <section class="reviews fade-in-right">
-            <h2 class="reviews__header">Отзывы</h2>
-            <p class="reviews__desc">
+        <section class="reviews container">
+            <h2 class="reviews__header fade-in-1">Отзывы</h2>
+            <p class="reviews__desc fade-in-2">
                 Люди, с которыми я работал, остаются довольны результатом.
             </p>
-            <figure class="reviews__card">
+            <figure class="reviews__card fade-in-3">
                 <div class="reviews__image">
                     <img src="" alt="Фото автора отзыва">
                 </div>
@@ -233,7 +259,7 @@
                     </p>
                 </figcaption>
             </figure>
-            <div class="reviews__toggle">
+            <div class="reviews__toggle fade-in-4">
                 <button class="reviews__toggle-button btn" type="button">
                     <img class="reviews__toggle-arrow" src="./src/icon/Arrow-L.svg" alt="Стрелка влево">
                     <img class="reviews__toggle-arrow icon-hover" src="./src/icon/Arrow-L-white.svg" alt="Стрелка влево">
@@ -246,7 +272,7 @@
         </section>
     </main>
 
-    <aside class="connection fade-in-left">
+    <aside class="connection">
         <div class="connection__container">
             <h2 class="connection__header">Договоримся о сотрудничестве</h2>
             <p class="connection__text">

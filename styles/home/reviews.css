@@ -71,3 +71,9 @@
 .reviews__toggle-button:hover .icon-hover {
     display: block;
 }
+
+@media(max-width:560px) {
+    .reviews__desc {
+        width: 100%;
+    }
+}

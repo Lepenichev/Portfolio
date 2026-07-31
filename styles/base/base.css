@@ -48,28 +48,9 @@ a, button {
     box-sizing: border-box;
 }
 
-.fade-in-left {
-    animation: fade-in-left 5s ease 0s 1 normal;
-}
-
-@keyframes fade-in-left {
-    to {
-        transform: translateX(0vh);
-    }
-    from {
-        transform: translateX(-100vh);
-    }
-}
-
-.fade-in-right {
-    animation: fade-in-right 5s ease 0s 1 normal;
-}
-
-@keyframes fade-in-right {
-    to {
-        transform: translateX(0vh);
-    }
-    from {
-        transform: translateX(100vh);
+@media(max-width: 900px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }

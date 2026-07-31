@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 3.5em;
+    text-align: center;
 }
 
 .information__header {
@@ -18,4 +19,10 @@
 .information__text {
     margin: 0;
     margin-bottom: 66px;
+}
+
+@media(max-width: 560px) {
+    .information__image {
+        width: 96vw;
+    }
 }

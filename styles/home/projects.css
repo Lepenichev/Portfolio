@@ -21,8 +21,8 @@
     margin: 0;
     width: 24vw;
     height: 13.5vw;
-    min-width: 250px;
-    min-height: 140px;
+    min-width: 270px;
+    min-height: 160px;
     border: 3px solid var(--violet);
     border-radius: 12px;
     overflow: hidden;
@@ -91,4 +91,11 @@
     font-weight: 700;
     line-height: 0.83em;
     margin-bottom: 100px;
+}
+
+@media(max-width: 790px) {
+    .projects__item {
+        width: 64vw;
+        height: 33.5vw;
+    }
 }

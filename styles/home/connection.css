@@ -6,7 +6,7 @@
     background-color: var(--violet);
     border-radius: 12px;
     width: 80%;
-    height: 166px;
+    min-height: 166px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -48,4 +48,11 @@
 .connection__button:hover {
     background-color: white;
     color: var(--violet);
+}
+
+@media(max-width: 900px) {
+    .connection__container {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
